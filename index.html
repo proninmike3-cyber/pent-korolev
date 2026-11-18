@@ -3,117 +3,340 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#0b0b10">
-  <meta name="description" content="PENT Королёв — лаунж-пространство для встреч, настольных игр и уютных вечеров. Проспект Космонавтов, 27Б. Информация о заведении и бронирование столов.">
+  <meta name="theme-color" content="#060606">
+  <meta name="description" content="PENT Королёв — атмосфера, акции, кофе с собой и удобное бронирование столов. Проспект Космонавтов, 27Б, 3 этаж.">
   <meta name="robots" content="noindex,nofollow">
-  <title>PENT — место твоего вечера | Королёв</title>
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <title>PENT Королёв — место, где вечер становится событием</title>
+  <link rel="icon" type="image/png" href="assets/pent/logo.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <svg aria-hidden="true" class="svg-sprite" xmlns="http://www.w3.org/2000/svg">
-    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
-    <symbol id="i-arrow-diag" viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11"/></symbol>
-    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
-    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
-    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M7 3 4.5 5.5a4 4 0 0 0-.7 4.2c2.2 5.7 6.8 9.7 11.9 11.4a4 4 0 0 0 4-1l2.1-2.3-5.4-4-2.6 2.3c-2.3-1.1-4.1-2.9-5.2-5.2l2.4-2.7L7 3Z"/></symbol>
-    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 2.9 6.2 6.8.9-5 4.9 1.2 6.9-5.9-3.3-5.9 3.3 1.2-6.9-5-4.9 6.8-.9L12 2Z"/></symbol>
-    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
-    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 11.4a8.4 8.4 0 0 1-8.5 8.3 8.7 8.7 0 0 1-3.8-.9L3 20l1.2-4.7A8.2 8.2 0 0 1 3 11.4a8.5 8.5 0 0 1 17 0Z"/></symbol>
-    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
-    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 1.5c.5 7 2.7 9.2 10.5 10.5-7.8 1.3-10 3.5-10.5 10.5C11.5 15.5 9.3 13.3 1.5 12 9.3 10.7 11.5 8.5 12 1.5Z"/></symbol>
-  </svg>
   <a href="#main" class="skip-link">Перейти к содержимому</a>
-  <header class="header" id="top">
-    <div class="header-inner container-wide">
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
       <a class="brand" href="#top" aria-label="PENT Королёв — на главную">
-        <span class="brand-symbol" aria-hidden="true"><span>p</span><i></i></span>
-        <span class="brand-word">PENT<span class="brand-period">.</span><small>KOROLEV</small></span>
+        <img src="assets/pent/logo.png" alt="Логотип PENT Королёв" class="brand-logo">
+        <span class="brand-text">
+          <strong>PENT</strong>
+          <small>Korolev</small>
+        </span>
       </a>
-      <nav class="desktop-nav" aria-label="Главное меню">
-        <a href="#space">Пространство</a>
-        <a href="#moments">Досуг</a>
-        <a href="#reviews">Отзывы</a>
+
+      <nav class="main-nav" aria-label="Основное меню">
+        <a href="#about">О нас</a>
+        <a href="#promos">Акции</a>
+        <a href="#menu">Меню</a>
+        <a href="#booking">Бронирование</a>
         <a href="#contact">Контакты</a>
       </nav>
-      <div class="header-actions"><span class="age-mark" title="Только для совершеннолетних">18+</span><a class="header-book" href="tel:+79850204020">Забронировать <svg class="icon"><use href="#i-arrow-diag"></use></svg></a></div>
-      <button class="menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span></button>
+
+      <div class="header-actions">
+        <span class="pill age-pill">18+</span>
+        <a class="header-cta" href="tel:+79850204020">Забронировать</a>
+        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-    <nav class="mobile-nav" id="mobile-nav" aria-label="Мобильное меню" hidden>
-      <a href="#space">Пространство</a><a href="#moments">Досуг</a><a href="#reviews">Отзывы</a><a href="#contact">Контакты</a>
-      <a class="mobile-nav-phone" href="tel:+79850204020">+7 (985) 020-40-20 <svg class="icon"><use href="#i-arrow-diag"></use></svg></a>
+
+    <nav class="mobile-menu" id="mobile-menu" hidden aria-label="Мобильное меню">
+      <a href="#about">О нас</a>
+      <a href="#promos">Акции</a>
+      <a href="#menu">Меню</a>
+      <a href="#booking">Бронирование</a>
+      <a href="#contact">Контакты</a>
+      <a class="mobile-call" href="tel:+79850204020">+7 985 020-40-20</a>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero section-screen" aria-labelledby="hero-title">
-      <div class="hero-ambient hero-ambient-one"></div><div class="hero-ambient hero-ambient-two"></div>
-      <div class="hero-inner container-wide">
+    <section class="hero">
+      <div class="hero-splash hero-splash-left"></div>
+      <div class="hero-splash hero-splash-right"></div>
+      <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow hero-eyebrow"><span class="eyebrow-dot"></span> ЛАУНЖ-ПРОСТРАНСТВО / КОРОЛЁВ</div>
-          <h1 id="hero-title">У ВЕЧЕРА<br>ЕСТЬ <em>СВОЁ</em><br><span class="hero-last">МЕСТО<span class="punctuation">.</span></span></h1>
-          <p class="hero-lead">Встречайтесь с друзьями. Выбирайте любимую игру. Оставайтесь на разговоры, которым не хочется ставить точку.</p>
-          <div class="hero-buttons"><a class="button button-primary" href="tel:+79850204020">Забронировать стол <svg class="icon"><use href="#i-arrow-diag"></use></svg></a><a class="button button-text" href="#space">Посмотреть пространство <svg class="icon"><use href="#i-arrow"></use></svg></a></div>
-          <div class="hero-bottom"><span><svg class="icon"><use href="#i-pin"></use></svg> Королёв, Космонавтов, 27Б</span><span class="hero-bottom-divider"></span><span>ВС–ЧТ до 02:00 · ПТ–СБ до 04:00</span></div>
-        </div>
-        <div class="hero-visual">
-          <div class="hero-picture-frame"><img src="assets/hero-room.svg" alt="Концептуальная иллюстрация лаунж-интерьера с мягкими диванами и неоновым светом" decoding="async" fetchpriority="high"><div class="hero-picture-shade"></div></div>
-          <div class="hero-vertical-type" aria-hidden="true">YOUR NIGHT. YOUR SPACE.</div>
-          <div class="hero-picture-label"><span class="label-line"></span><span>НЕ ПРОСТО ТОЧКА НА КАРТЕ<br><strong>А МЕСТО ВСТРЕЧИ</strong></span></div>
-          <div class="hero-roundel" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="text-circle" d="M60 60m-43 0a43 43 0 1 1 86 0a43 43 0 1 1-86 0"/></defs><text><textPath href="#text-circle">PENT KOROLEV · PENT KOROLEV · </textPath></text><path d="M60 38v44M38 60h44M45 45l30 30M75 45 45 75" stroke="currentColor" stroke-width="1.1"/></svg></div>
-        </div>
-      </div>
-      <div class="hero-edge">PENT / EST. IN KOROLEV</div>
-    </section>
+          <span class="eyebrow">PENT KOROLEV · ATMOSPHERE · COFFEE · EVENTS</span>
+          <h1 class="hero-title">ИСПЫТАЙ <span>АТМОСФЕРУ</span><br>ПЕРЕД ПОСАДКОЙ</h1>
+          <p class="hero-lead">PENT Королёв — это место с характером: графичный фирменный стиль, яркие акции, кофе с собой, киновечера и удобное бронирование по времени с остатком свободных мест.</p>
 
-    <section id="space" class="space-section section-screen" aria-labelledby="space-title">
-      <div class="container-wide space-layout">
-        <div class="space-showcase" aria-hidden="true">
-          <div class="space-image-main"><img src="assets/hero-room.svg" alt="" loading="eager"></div>
-          <div class="space-image-accent"><img src="assets/tea.svg" alt="" loading="eager"></div>
-          <div class="space-stamp"><svg class="icon"><use href="#i-spark"></use></svg> АТМОСФЕРА ИМЕЕТ ЗНАЧЕНИЕ</div>
-          <span class="space-graphic-word">FEEL</span>
-        </div>
-        <div class="space-content">
-          <span class="eyebrow"><span class="eyebrow-index">01 /</span> ПРОСТРАНСТВО</span>
-          <h2 id="space-title" class="section-title">Не нужно<br>искать <em>повод</em><br>встретиться.</h2>
-          <p class="section-lead">PENT — место для тех, кто любит живое общение, уютные диваны и атмосферу с характером. Здесь интерьер — часть настроения, а вечер выстраивается сам собой.</p>
-          <div class="space-details"><div class="detail-line"><span class="detail-number">/ 01</span><div><b>Интерьер, который запоминается</b><span>Каллиграфия на стенах, приглушённый свет и мягкие места для компании.</span></div></div><div class="detail-line"><span class="detail-number">/ 02</span><div><b>Своё настроение</b><span>Музыка, общение и возможность выбрать, как провести вечер.</span></div></div><div class="detail-line"><span class="detail-number">/ 03</span><div><b>В центре Королёва</b><span>Проспект Космонавтов, 27Б — удобно встретиться после насыщенного дня.</span></div></div></div>
-        </div>
-      </div>
-    </section>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#booking">Выбрать время</a>
+            <a class="btn btn-ghost" href="#promos">Смотреть акции</a>
+          </div>
 
-    <section id="moments" class="moments-section section-screen" aria-labelledby="moments-title">
-      <div class="container-wide">
-        <div class="section-heading-row"><div><span class="eyebrow"><span class="eyebrow-index">02 /</span> КАК ПРОВЕСТИ ВЕЧЕР</span><h2 id="moments-title" class="section-title">Выбирай <em>свой</em><br>сценарий.</h2></div><p>Без расписания идеального отдыха. Иногда нужен азарт игры, иногда — чай и разговоры, а иногда — просто хорошая компания.</p></div>
-        <div class="moment-grid">
-          <article class="moment-card"><div class="moment-image"><img src="assets/games.svg" alt="Иллюстрация шахматной доски и фигур" loading="eager"><span class="moment-no">01 / 03</span></div><div class="moment-body"><div class="moment-label">COMPANY TIME</div><h3>Сыграть партию</h3><p>Шахматы и настольные игры — отличный повод собраться не только ради разговоров.</p><svg class="icon"><use href="#i-arrow-diag"></use></svg></div></article>
-          <article class="moment-card"><div class="moment-image"><img src="assets/tea.svg" alt="Иллюстрация чашки чая" loading="eager"><span class="moment-no">02 / 03</span></div><div class="moment-body"><div class="moment-label">SLOW EVENING</div><h3>Забыть про спешку</h3><p>Чай, лимонады и уютная атмосфера для разговоров с теми, кто вам близок.</p><svg class="icon"><use href="#i-arrow-diag"></use></svg></div></article>
-          <article class="moment-card"><div class="moment-image"><img src="assets/screen.svg" alt="Иллюстрация зала с большим экраном" loading="eager"><span class="moment-no">03 / 03</span></div><div class="moment-body"><div class="moment-label">SOMETHING MORE</div><h3>Поймать момент</h3><p>Кинопоказы, трансляции и другие форматы встреч — по актуальным анонсам площадки.</p><svg class="icon"><use href="#i-arrow-diag"></use></svg></div></article>
+          <div class="hero-facts">
+            <div class="fact-card">
+              <span class="fact-kicker">Адрес</span>
+              <strong>пр. Космонавтов, 27Б</strong>
+              <small>3 этаж · Королёв</small>
+            </div>
+            <div class="fact-card">
+              <span class="fact-kicker">График</span>
+              <strong>15:00 — 02:00</strong>
+              <small>ПТ–СБ до 04:00</small>
+            </div>
+            <div class="fact-card">
+              <span class="fact-kicker">Фишки</span>
+              <strong>Акции · Кино · Кубы</strong>
+              <small>и кофе с собой</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Промо-афиши PENT">
+          <div class="poster-stack poster-main"><img src="assets/pent/happy-hours.webp" alt="Счастливые часы в PENT Королёв"></div>
+          <div class="poster-stack poster-left"><img src="assets/pent/dice-promo.webp" alt="Акция с кубиками в PENT Королёв"></div>
+          <div class="poster-stack poster-right"><img src="assets/pent/movie-night.webp" alt="Киновечер в PENT Королёв"></div>
+          <div class="hero-badge">5.0 ★ рейтинг на картах</div>
         </div>
       </div>
     </section>
 
-    <section id="reviews" class="reviews-section section-screen" aria-labelledby="reviews-title">
-      <div class="container-wide reviews-grid">
-        <div class="reviews-heading"><span class="eyebrow"><span class="eyebrow-index">03 /</span> ВПЕЧАТЛЕНИЯ ГОСТЕЙ</span><h2 id="reviews-title" class="section-title">Атмосферу<br>не <em>придумать.</em><br>Её чувствуют.</h2><p>О PENT чаще всего говорят через ощущения: интерьер, музыку, общение и внимательное отношение команды.</p><a class="button button-outline" href="https://yandex.ru/maps/org/pent_korolev/1483120468/reviews/" target="_blank" rel="noopener noreferrer">Все отзывы на Яндекс Картах <svg class="icon"><use href="#i-arrow-diag"></use></svg></a></div>
-        <div class="reviews-content"><div class="rating-panel"><div><span class="rating-number">5,0</span><span class="rating-stars" aria-label="5 из 5 звёзд"><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg><svg><use href="#i-star"></use></svg></span></div><div class="rating-caption">Рейтинг на Яндекс Картах<br><small>По данным карточки на ноябрь 2026</small></div></div>
-          <div class="review-summary"><span class="review-num">01</span><div><h3>Место, куда возвращаются</h3><p>Постоянные гости особенно выделяют дружелюбную атмосферу и знакомую команду.</p></div></div>
-          <div class="review-summary"><span class="review-num">02</span><div><h3>Нечем скучать</h3><p>В отзывах вспоминают шахматы, настольные игры и вечера в компании друзей.</p></div></div>
-          <div class="review-summary"><span class="review-num">03</span><div><h3>Свой характер</h3><p>Необычный интерьер и подбор музыки — часть узнаваемого настроения PENT.</p></div></div>
+    <section id="about" class="section intro-section">
+      <div class="container intro-grid">
+        <div>
+          <span class="section-label">АТМОСФЕРА PENT</span>
+          <h2 class="section-title">Больше, чем просто встреча. Место, куда хочется возвращаться.</h2>
+          <p class="section-text">Собирайте друзей, выбирайте напитки и открывайте новые поводы заглянуть в PENT. Вечер может начаться с чашки кофе, продолжиться игрой и закончиться яркими впечатлениями.</p>
+        </div>
+        <div class="feature-list">
+          <article class="feature-card">
+            <span class="feature-number">01</span>
+            <h3>Понятные акции</h3>
+            <p>Счастливые часы, подарок ко дню рождения, кино по воскресеньям и фирменная игра с кубами.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">02</span>
+            <h3>Прозрачные цены</h3>
+            <p>Классика, авторские сочетания, пунши и добавки — выбирайте напиток под своё настроение.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">03</span>
+            <h3>Бронь без путаницы</h3>
+            <p>Выберите удобный день и посмотрите часы для визита. Подтвердить стол можно у администратора.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="visit-section" id="visit" aria-labelledby="visit-title">
-      <div class="container-wide"><div class="visit-banner"><div class="visit-top"><span class="eyebrow">ПЕРЕД ВИЗИТОМ</span><span class="visit-18">18+</span></div><div class="visit-main"><h2 id="visit-title">Хороший вечер<br>начинается с <em>деталей.</em></h2><p>Собираетесь большой компанией? Планируете принести напитки? Хотите заранее понять время бронирования и условия заказа? Уточните детали у администратора до визита — так вечер пройдёт без неожиданностей.</p></div><div class="visit-bottom"><div><svg class="icon"><use href="#i-check"></use></svg> Для совершеннолетних гостей</div><div><svg class="icon"><use href="#i-check"></use></svg> Бронирование по телефону</div><div><svg class="icon"><use href="#i-check"></use></svg> Условия визита уточняются заранее</div><a href="tel:+79850204020">Уточнить условия <svg class="icon"><use href="#i-arrow-diag"></use></svg></a></div></div></div>
+    <section id="promos" class="section promo-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-label">АКЦИИ И ПРИКОЛЮХИ</span>
+            <h2 class="section-title">Фирменные сценарии, ради которых хочется вернуться.</h2>
+          </div>
+          <p class="section-text narrow">Акции, подарки и события для тех, кто любит встречаться чаще.</p>
+        </div>
+
+        <div class="promo-grid">
+          <article class="promo-card promo-card-large">
+            <div class="promo-card-image"><img src="assets/pent/happy-hours.webp" alt="Счастливые часы"></div>
+            <div class="promo-card-body">
+              <span class="promo-chip">ПН–ЧТ · 15:00–18:00</span>
+              <h3>Счастливые часы</h3>
+              <p>Скидка <strong>15%</strong> на всё меню. Хороший повод заглянуть днём или начать вечер выгоднее.</p>
+            </div>
+          </article>
+
+          <article class="promo-card">
+            <div class="promo-card-image"><img src="assets/pent/birthday.webp" alt="Скидка в день рождения"></div>
+            <div class="promo-card-body">
+              <span class="promo-chip">День рождения</span>
+              <h3>15% в день рождения</h3>
+              <p>Скидка действует в сам день рождения и ещё <strong>6 дней после</strong>. Дополнительно — <strong>фото на полароид</strong> в подарок.</p>
+            </div>
+          </article>
+
+          <article class="promo-card">
+            <div class="promo-card-image"><img src="assets/pent/movie-night.webp" alt="Киновечер"></div>
+            <div class="promo-card-body">
+              <span class="promo-chip">Каждое воскресенье</span>
+              <h3>Киновечер в 21:00</h3>
+              <p>Уютная атмосфера, лучшие фильмы и готовый повод собрать друзей в конце недели.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="dice-layout">
+          <div class="dice-copy">
+            <span class="section-label">ИГРА С КУБАМИ</span>
+            <h3 class="sub-title">Испытай удачу перед посадкой.</h3>
+            <p class="section-text">Перед началом вечера брось три кубика. Три одинаковых значения могут принести приятный бонус — правила подскажет администратор.</p>
+            <ul class="dice-list">
+              <li><strong>6-6-6</strong><span>Скидка 30% на чек</span></li>
+              <li><strong>5-5-5</strong><span>Скидка 15% на чек</span></li>
+              <li><strong>4-4-4</strong><span>Скидка 10% на чек</span></li>
+              <li><strong>3-3-3</strong><span>Чайник чая</span></li>
+              <li><strong>2-2-2</strong><span>Напиток</span></li>
+              <li><strong>1-1-1</strong><span>Снеки</span></li>
+            </ul>
+            <p class="fineprint">Правила акции уточняются у администратора.</p>
+          </div>
+          <div class="dice-image"><img src="assets/pent/dice-promo.webp" alt="Акция Кубы"></div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="contact-section section-screen" aria-labelledby="contact-title"><div class="container-wide contact-layout"><div class="contact-info"><span class="eyebrow"><span class="eyebrow-index">04 /</span> КОНТАКТЫ</span><h2 id="contact-title" class="section-title">Увидимся<br><em>сегодня?</em></h2><p class="contact-desc">Планируете вечер? Позвоните — администратор подскажет по свободным местам и актуальным условиям посещения.</p><div class="contact-details"><div class="contact-detail"><svg class="icon"><use href="#i-pin"></use></svg><div><span>НАШ АДРЕС</span><strong>Королёв, проспект Космонавтов, 27Б</strong></div></div><div class="contact-detail"><svg class="icon"><use href="#i-clock"></use></svg><div><span>ВРЕМЯ РАБОТЫ</span><strong>ВС–ЧТ: 15:00–02:00<br>ПТ–СБ: 15:00–04:00</strong></div></div><div class="contact-detail"><svg class="icon"><use href="#i-phone"></use></svg><div><span>БРОНИРОВАНИЕ</span><a href="tel:+79850204020">+7 (985) 020-40-20</a></div></div></div><div class="contact-buttons"><a href="tel:+79850204020" class="button button-primary">Позвонить и забронировать <svg class="icon"><use href="#i-arrow-diag"></use></svg></a><a class="button button-outline" href="https://yandex.ru/maps/org/pent_korolev/1483120468/" target="_blank" rel="noopener noreferrer">Построить маршрут <svg class="icon"><use href="#i-arrow-diag"></use></svg></a></div></div><div class="location-poster"><div class="location-grid"></div><div class="location-orbit orbit-one"></div><div class="location-orbit orbit-two"></div><div class="location-orbit orbit-three"></div><span class="location-coordinate coord-one">55°54′48″ N</span><span class="location-coordinate coord-two">37°52′05″ E</span><div class="location-pin"><svg class="icon"><use href="#i-pin"></use></svg></div><div class="location-name">PENT<span>.</span></div><div class="location-poster-footer"><span>КОРОЛЁВ<br>КОСМОНАВТОВ, 27Б</span><a href="https://yandex.ru/maps/org/pent_korolev/1483120468/" target="_blank" rel="noopener noreferrer" aria-label="Открыть адрес на Яндекс Картах"><svg class="icon"><use href="#i-arrow-diag"></use></svg></a></div></div></div></section>
+    <section id="menu" class="section menu-section">
+      <div class="container menu-layout">
+        <div class="menu-head">
+          <span class="section-label">КОФЕ С СОБОЙ · МЕНЮ</span>
+          <h2 class="section-title">Цены и позиции — сразу на сайте, без лишних вопросов.</h2>
+          <p class="section-text">Любимый кофе по пути и необычные напитки для настроения. Выбирайте классические рецепты, авторские сочетания или фруктовые пунши.</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-column">
+            <h3>Классика</h3>
+            <ul class="price-list">
+              <li><span>Двойной эспрессо <small>40 мл</small></span><strong>150 ₽</strong></li>
+              <li><span>Американо <small>0.2 / 0.3 / 0.4</small></span><strong>220 / 230 / 240 ₽</strong></li>
+              <li><span>Капучино <small>0.2 / 0.3 / 0.4</small></span><strong>250 / 260 / 270 ₽</strong></li>
+              <li><span>Латте <small>0.3 / 0.4</small></span><strong>280 / 310 ₽</strong></li>
+              <li><span>Флэт-уайт <small>0.2 / 0.3 / 0.4</small></span><strong>260 / 280 / 300 ₽</strong></li>
+              <li><span>Раф <small>0.3 / 0.4</small></span><strong>330 / 350 ₽</strong></li>
+              <li><span>Моккачино <small>0.3</small></span><strong>350 ₽</strong></li>
+              <li><span>Горячий шоколад <small>0.3</small></span><strong>350 ₽</strong></li>
+              <li><span>Какао <small>0.3</small></span><strong>300 ₽</strong></li>
+            </ul>
+          </article>
+
+          <article class="menu-column">
+            <h3>Авторские напитки</h3>
+            <ul class="price-list">
+              <li><span>Раф апельсин <small>0.3 / 0.4</small></span><strong>350 / 400 ₽</strong></li>
+              <li><span>Малиновый латте <small>0.3 / 0.4</small></span><strong>350 / 400 ₽</strong></li>
+            </ul>
+            <div class="menu-note">Впереди ещё больше авторских напитков.</div>
+          </article>
+
+          <article class="menu-column">
+            <h3>Пунши</h3>
+            <ul class="price-list">
+              <li><span>Манго-маракуйя <small>0.4</small></span><strong>350 ₽</strong></li>
+              <li><span>Черника-мята <small>0.4</small></span><strong>350 ₽</strong></li>
+              <li><span>Ягодный <small>0.4</small></span><strong>350 ₽</strong></li>
+              <li><span>Облепиха-апельсин <small>0.4</small></span><strong>350 ₽</strong></li>
+              <li><span>Клюква-апельсин <small>0.4</small></span><strong>350 ₽</strong></li>
+            </ul>
+          </article>
+
+          <article class="menu-column addons-column">
+            <h3>Допы</h3>
+            <ul class="addon-list">
+              <li><span>Альтернативное молоко</span><strong>+100 ₽</strong></li>
+              <li><span>Доп. эспрессо</span><strong>+80 ₽</strong></li>
+              <li><span>Сиропы в ассортименте</span><strong>+50 ₽</strong></li>
+            </ul>
+            <a class="btn btn-secondary" href="tel:+79850204020">Уточнить полный ассортимент</a>
+          </article>
+        </div>
+
+        <div class="menu-poster">
+          <img src="assets/pent/coffee-menu.webp" alt="Постер с меню кофе с собой PENT Королёв">
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="section booking-section">
+      <div class="container booking-grid">
+        <div class="booking-copy">
+          <span class="section-label">КАЛЕНДАРЬ БРОНИРОВАНИЯ</span>
+          <h2 class="section-title">Удобный выбор дня, времени и остатка свободных мест.</h2>
+          <p class="section-text">Выберите дату и посмотрите доступные часы. Сейчас показан пример расписания и количества мест; подтвердить бронь можно по телефону у администратора.</p>
+          <div class="booking-side-notes">
+            <div class="booking-note"><strong>10 мест</strong><span>стартовая ёмкость одного слота</span></div>
+            <div class="booking-note"><strong>По часам</strong><span>выводим понятные интервалы для брони</span></div>
+            <div class="booking-note"><strong>Без сюрпризов</strong><span>актуальное подтверждение — у администратора</span></div>
+          </div>
+        </div>
+
+        <div class="booking-widget">
+          <div class="booking-widget-top">
+            <div>
+              <span class="mini-label">Выберите день</span>
+              <h3>Доступные даты</h3>
+            </div>
+            <span class="booking-status">Онлайн-бронь · демо</span>
+          </div>
+
+          <div class="booking-days" id="booking-days" role="tablist" aria-label="Даты бронирования"></div>
+
+          <div class="booking-selected" id="booking-selected">Загрузка доступных слотов…</div>
+          <div class="booking-slots" id="booking-slots"></div>
+
+          <div class="booking-footer">
+            <div>
+              <strong>Не нашли удобное время?</strong>
+              <p>Позвоните администратору — подскажем по свободным местам и условиям размещения компании.</p>
+            </div>
+            <a class="btn btn-primary" href="tel:+79850204020">Позвонить для брони</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <span class="section-label">КОНТАКТЫ</span>
+          <h2 class="section-title">Увидимся в PENT!</h2>
+          <p class="section-text">Загляните на проспект Космонавтов, 27Б — или свяжитесь с нами, чтобы заранее уточнить условия и выбрать время для компании.</p>
+
+          <div class="contact-cards">
+            <div class="contact-card">
+              <span>Телефон</span>
+              <a href="tel:+79850204020">+7 985 020-40-20</a>
+            </div>
+            <div class="contact-card">
+              <span>Адрес</span>
+              <strong>г. Королёв, пр. Космонавтов, 27Б, 3 этаж</strong>
+            </div>
+            <div class="contact-card">
+              <span>Часы работы</span>
+              <strong>ПН–ЧТ и ВС: 15:00–02:00<br>ПТ–СБ: 15:00–04:00</strong>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="tel:+79850204020">Забронировать стол</a>
+            <a class="btn btn-ghost" href="https://yandex.ru/maps/org/pent_korolev/1483120468?si=gjyqj61xhk2vw56bg0pxh3tmw0" target="_blank" rel="noopener noreferrer">Открыть на карте</a>
+          </div>
+        </div>
+
+        <aside class="contact-panel">
+          <img src="assets/pent/logo.png" alt="Логотип PENT" class="contact-panel-logo">
+          <h3>PENT KOROLEV</h3>
+          <p>Место встреч, кофе с собой и атмосферные события для взрослых гостей.</p>
+          <ul>
+            <li>18+</li>
+            <li>Акции и подарки</li>
+            <li>Выбор времени визита</li>
+            <li>Кофе и напитки</li>
+          </ul>
+          <div class="contact-panel-rule">Скидки и акции не суммируются. Условия уточняются у администратора.</div>
+        </aside>
+      </div>
+    </section>
   </main>
 
-  <footer class="footer"><div class="container-wide footer-inner"><a class="footer-logo" href="#top">PENT<span>.</span> <small>KOROLEV</small></a><p>Лаунж-пространство для совершеннолетних посетителей.<br>Королёв, проспект Космонавтов, 27Б</p><div><span>Демонстрационная концепция сайта · 2026</span><a href="#top">Наверх ↑</a></div></div></footer>
-  <a class="mobile-sticky-call" href="tel:+79850204020"><svg class="icon"><use href="#i-phone"></use></svg> Забронировать стол <svg class="icon"><use href="#i-arrow-diag"></use></svg></a>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/pent/logo.png" alt="Логотип PENT Королёв">
+        <div>
+          <strong>PENT Королёв</strong>
+          <p>Демонстрационная версия сайта. Доступность мест указана для примера и подтверждается администратором.</p>
+        </div>
+      </div>
+      <a href="#top" class="footer-up">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <a class="sticky-call" href="tel:+79850204020">Забронировать стол</a>
+
   <script src="script.js" defer></script>
 </body>
 </html>
