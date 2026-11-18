@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1120" fill="none">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B0D1C"/><stop offset=".48" stop-color="#242039"/><stop offset="1" stop-color="#0B0A12"/></linearGradient>
+ <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#222032"/><stop offset=".55" stop-color="#100D20"/><stop offset="1" stop-color="#372537"/></linearGradient>
+ <linearGradient id="floor" x1=".2" y1="0" x2=".7" y2="1"><stop stop-color="#241725"/><stop offset="1" stop-color="#07070B"/></linearGradient>
+ <linearGradient id="seat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#70506C"/><stop offset=".38" stop-color="#35283B"/><stop offset="1" stop-color="#0B0B15"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E05FFF" stop-opacity=".44"/><stop offset=".4" stop-color="#C06DFF" stop-opacity=".04"/><stop offset="1" stop-color="#3D3159" stop-opacity=".3"/></linearGradient>
+ <radialGradient id="hot"><stop stop-color="#C650F2" stop-opacity=".59"/><stop offset="1" stop-color="#C650F2" stop-opacity="0"/></radialGradient>
+ <radialGradient id="cold"><stop stop-color="#859CFF" stop-opacity=".45"/><stop offset="1" stop-color="#859CFF" stop-opacity="0"/></radialGradient>
+ <radialGradient id="light"><stop stop-color="#FFE1D0" stop-opacity=".28"/><stop offset="1" stop-color="#FFE1D0" stop-opacity="0"/></radialGradient>
+ <pattern id="hatch" width="36" height="36" patternUnits="userSpaceOnUse" patternTransform="rotate(31)"><path d="M0 0V36" stroke="#F1D3FF" stroke-opacity=".045" stroke-width="1"/></pattern>
+ <filter id="blur"><feGaussianBlur stdDeviation="50"/></filter>
+ <filter id="blur10"><feGaussianBlur stdDeviation="11"/></filter>
+ <filter id="glow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".78" numOctaves="3" seed="4" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".18"/></feComponentTransfer></filter>
+</defs>
+<rect width="1000" height="1120" fill="url(#bg)"/>
+<ellipse cx="650" cy="470" rx="470" ry="450" fill="url(#hot)"/>
+<ellipse cx="390" cy="280" rx="300" ry="480" fill="url(#cold)"/>
+<!-- deep back room and walls -->
+<path d="M0 105 L718 0 H1000 V880 L634 685 0 808Z" fill="url(#wall)"/>
+<path d="M0 105 L718 0 L643 699 0 808Z" fill="#111322" opacity=".89"/>
+<path d="M646 698 L1000 880 V1120 H0 V806Z" fill="url(#floor)"/>
+<path d="M0 0 H1000 V112 L0 272Z" fill="#090A14"/>
+<!-- ceiling battens -->
+<g stroke="#8C76A2" stroke-width="4" opacity=".28"><path d="M0 42L1000 106M0 109L1000 164M0 183L995 226M0 260L788 293"/><path d="M110 0L58 278M286 0L266 256M485 0L483 235M697 0L736 258M890 0L1000 272"/></g>
+<g fill="#D9CAEB"><rect x="134" y="125" width="158" height="5" rx="2.5" opacity=".45"/><rect x="482" y="92" width="216" height="4" rx="2" opacity=".33"/></g>
+<!-- calligraphic street art on wall -->
+<g transform="translate(26 218) skewY(-7)" stroke="#C4B4FF" fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity=".45">
+ <path d="M-32 230C68 40 113 64 89 198S32 377 211 176M75 104Q218-4 178 128T108 303"/>
+ <path d="M132 245C201 63 300 57 274 150S226 315 341 97M214 350L335 203M286 278Q358 205 358 141" stroke-width="5"/>
+ <path d="M12 390Q165 266 282 330M49 429Q179 360 291 397" stroke-width="3" opacity=".58"/>
+</g>
+<g transform="translate(738 160)" stroke="#A987F7" stroke-width="2" fill="none" opacity=".42"><path d="M0 65Q100 0 179 57M-6 96Q107 45 214 104M31 124Q110 65 209 155"/><path d="M108-40V270M150-40V270"/></g>
+<!-- central illuminated pane -->
+<path d="M480 267L885 227V730L477 679Z" fill="#0D1121" stroke="#6F527D" stroke-width="4"/>
+<path d="M492 282L871 250V708L490 662Z" fill="url(#glass)"/>
+<g stroke="#F45DBD" stroke-width="3" opacity=".7" filter="url(#glow)"><path d="M571 271V671M665 263V685M771 254V700M492 378L871 373M489 503L872 508M487 605L871 629"/></g>
+<ellipse cx="671" cy="462" rx="250" ry="310" fill="url(#hot)"/>
+<!-- violet light strips -->
+<path d="M478 269L886 230" stroke="#E357C1" stroke-width="7" filter="url(#glow)"/><path d="M482 272L884 234" stroke="#FFE0F7" stroke-opacity=".7" stroke-width="2"/>
+<!-- far couches -->
+<path d="M411 637L574 605L713 626L725 726L532 749L400 711Z" fill="#1D172A" stroke="#19131F" stroke-width="9"/>
+<path d="M427 659L545 629L692 652L697 691L531 716L416 690Z" fill="url(#seat)"/>
+<!-- ambient lights -->
+<ellipse cx="256" cy="245" rx="245" ry="190" fill="url(#light)"/><ellipse cx="834" cy="305" rx="150" ry="155" fill="url(#hot)"/>
+<!-- near sofas left -->
+<path d="M-66 835Q102 713 249 761L384 860L344 1026L-42 1070Z" fill="#090913" stroke="#080911" stroke-width="14"/>
+<path d="M-65 823Q96 702 252 754L368 857L310 916Q167 862-43 973Z" fill="url(#seat)"/>
+<path d="M-45 974Q152 850 319 929L305 1027L-27 1092Z" fill="#342537"/>
+<path d="M-42 980Q150 876 317 945" stroke="#99758D" stroke-opacity=".5" stroke-width="5"/>
+<path d="M82 755L101 939M214 761L221 881" stroke="#1D1828" stroke-width="10" opacity=".58"/>
+<!-- near sofas right -->
+<path d="M723 804Q879 714 1088 795L1090 1076L700 1053Z" fill="#080A14" stroke="#050711" stroke-width="12"/>
+<path d="M729 799Q892 694 1066 806L1079 887Q909 823 736 909Z" fill="url(#seat)"/>
+<path d="M742 915Q931 814 1076 909V1045L719 1063Z" fill="#392D47"/>
+<path d="M741 918Q927 826 1077 920" stroke="#B078AE" stroke-opacity=".42" stroke-width="5"/>
+<!-- foreground table -->
+<path d="M318 894L629 864L733 935L458 992Z" fill="#0A0B14" stroke="#6B5273" stroke-width="4"/>
+<path d="M323 892L630 861L731 935L459 982Z" fill="#1B1A29"/>
+<path d="M455 978L473 1106M681 953L690 1118" stroke="#0C0B13" stroke-width="32"/>
+<ellipse cx="480" cy="922" rx="72" ry="15" fill="#A58AA9" opacity=".15"/>
+<g opacity=".65"><path d="M508 867L531 862L548 904L503 906Z" fill="#A378AE"/><path d="M513 867L527 867L534 893L512 897Z" fill="#E5B4EB" opacity=".35"/></g>
+<!-- floor highlights -->
+<g stroke="#D16CCB" opacity=".18" stroke-width="3"><path d="M0 1068L626 693M216 1120L694 712M940 1120L779 780"/></g>
+<path d="M0 0H1000V1120H0Z" fill="url(#hatch)"/>
+<rect width="1000" height="1120" filter="url(#grain)" opacity=".32"/>
+<path d="M0 0H1000V1120H0Z" fill="url(#bg)" opacity=".13"/>
+</svg>
